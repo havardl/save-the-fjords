@@ -8,6 +8,7 @@
       <span class="tagline" :key="index">{{tagline}}</span><br :key="index" />
     </template>
   </div>  
+  <span class="photo-accreditation">Photo: <a href="https://www.lukatomac.com/en/gallery/vevring/" target="_blank">Luka Tomac</a></span>
 </div>
 </template>
 
@@ -31,6 +32,22 @@ h1 {
 
 .tagline-container {
   margin-top: 20%;
+}
+
+.photo-accreditation {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 80%;
+  font-weight: 400;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .tagline {
@@ -57,6 +74,10 @@ h1 {
   }  
   .tagline {
     font-size: 80%;
+  }  
+  .photo-accreditation {
+    font-size: 60%;
+    bottom: 3%;
   }  
 }
 
