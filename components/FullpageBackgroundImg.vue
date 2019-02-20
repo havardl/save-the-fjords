@@ -5,7 +5,7 @@
   </div>
   <div class="tagline-container">
     <template v-for="(tagline,index) in taglines">
-      <span class="tagline" :key="index">{{tagline}}</span><br :key="index" />
+      <span class="tagline" :key="index">{{tagline}}</span><br :key="`br-`+index" />
     </template>
   </div>  
   <span class="photo-accreditation">Photo: <a href="https://www.lukatomac.com/en/gallery/vevring/" target="_blank">Luka Tomac</a></span>
